@@ -82,6 +82,9 @@
 
 ![Server Stopped](images/server_stopped.png)
 
+動画での例はこちらをご覧ください
+https://x.com/Crock_fnexYT/status/1814321286224699569
+
 ## ライセンス
 
 このプロジェクトは MIT ライセンスの下でライセンスされています。詳細は [LICENSE](LICENSE) ファイルを参照してください。
