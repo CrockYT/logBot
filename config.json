@@ -1,0 +1,5 @@
+{
+  "logFilePath": "mc-server/logs/latest.log",
+  "webhookURL": "https://discord.com/api/webhooks/SERVER_ID/WEBHOOK_TOKEN",
+  "checkInterval": 60000
+}
