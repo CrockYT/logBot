@@ -64,7 +64,7 @@ function sendToDiscord(message, title) {
         color: 3066993 // 青色
     };
 
-    axios.post(config.webhookURL, {
+    return axios.post(config.webhookURL, {
         embeds: [embed]
     })
     .then(response => {
@@ -91,18 +91,18 @@ function startMonitoring() {
 function endMonitoring() {
     const message = '監視を終了しました。';
 
-    sendToDiscord(message, '監視終了');
+    sendToDiscord(message, '監視終了').then(() => {
+        process.exit();
+    });
 }
 
 // 終了時のハンドラを設定
 process.on('SIGINT', () => {
     endMonitoring();
-    process.exit();
 });
 
 process.on('SIGTERM', () => {
     endMonitoring();
-    process.exit();
 });
 
 // 監視開始
